@@ -7,6 +7,7 @@ import type { HomePropTypes } from './types';
 const HomeScreen: React.FunctionComponent<HomePropTypes> = () => (
   <SafeAreaView style={styles.container}>
     <Text accessibilityRole={'text'}>Home Screen</Text>
+    <Text accessibilityRole={'text'}>Test text</Text>
   </SafeAreaView>
 );
 
