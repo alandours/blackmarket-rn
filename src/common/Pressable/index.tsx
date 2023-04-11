@@ -4,7 +4,7 @@ import { Pressable as RNPressable } from 'react-native';
 import styles from './styles';
 import { ButtonProps } from './types';
 
-const Pressable: React.FunctionComponent<ButtonProps> = ({
+export const Pressable: React.FunctionComponent<ButtonProps> = ({
   containerStyle,
   disabledStyle,
   disabled = false,
@@ -22,5 +22,3 @@ const Pressable: React.FunctionComponent<ButtonProps> = ({
     {...props}
   />
 );
-
-export default Pressable;

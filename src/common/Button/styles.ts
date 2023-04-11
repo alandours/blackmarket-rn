@@ -1,23 +1,26 @@
 import { StyleSheet } from 'react-native';
 
-import { BLUE, GREY_01, GREY_02, WHITE } from 'constants/styles';
+import { DARK_GREY, GREY, PRIMARY, WHITE } from 'constants/styles';
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 22,
-    backgroundColor: BLUE,
+    borderRadius: 8,
+    backgroundColor: PRIMARY,
+    margin: 16,
+    padding: 12,
     width: '80%',
-    margin: 10,
   },
   disabledContainer: {
-    backgroundColor: GREY_01,
+    backgroundColor: GREY,
     borderColor: WHITE,
   },
   title: {
     color: WHITE,
+    fontSize: 16,
+    fontWeight: '700',
   },
   disabledTitle: {
-    color: GREY_02,
+    color: DARK_GREY,
   },
 });
 
