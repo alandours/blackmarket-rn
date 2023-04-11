@@ -1,4 +1,4 @@
-import Logo from 'assets/logo.png';
+import logo from 'assets/logo.png';
 import { Button } from 'common/Button';
 import { SecondaryButton } from 'common/SecondaryButton';
 import { TextInput } from 'common/TextInput';
@@ -10,7 +10,7 @@ import styles from 'features/auth/welcome/screen/styles';
 
 export const SignIn = () => (
   <View style={styles.mainContainer}>
-    <Image source={Logo} style={styles.logo} accessibilityLabel={strings.a11y.logo} />
+    <Image source={logo} style={styles.logo} accessibilityLabel={strings.a11y.logo} />
     <TextInput
       label={strings.auth.fields.email.label}
       placeholder={strings.auth.fields.email.placeholder}

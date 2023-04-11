@@ -1,4 +1,4 @@
-import PasswordToggle from 'assets/passwordToggle.png';
+import passwordToggle from 'assets/passwordToggle.png';
 import { Pressable } from 'common/Pressable';
 import React, { useState } from 'react';
 import { Image, TextInput as RNTextInput, Text, View } from 'react-native';
@@ -27,7 +27,7 @@ export const TextInput: React.FunctionComponent<TextInputProps> = ({
       />
       {secureTextEntry && (
         <Pressable style={styles.togglePassword} onPress={() => setShowPassword(!showPassword)}>
-          <Image source={PasswordToggle} style={styles.togglePasswordImage} />
+          <Image source={passwordToggle} style={styles.togglePasswordImage} />
         </Pressable>
       )}
     </View>
