@@ -8,13 +8,16 @@ import { ButtonProps } from './types';
 export const Button: React.FunctionComponent<ButtonProps> = ({
   title,
   disabled = false,
+  light = false,
   ...props
 }) => (
   <Pressable
-    containerStyle={styles.container}
+    containerStyle={[styles.container, light && styles.lightContainer]}
     disabledStyle={styles.disabledContainer}
     disabled={disabled}
     {...props}>
-    <Text style={[styles.title, disabled && styles.disabledTitle]}>{title}</Text>
+    <Text style={[styles.title, light && styles.lightTitle, disabled && styles.disabledTitle]}>
+      {title}
+    </Text>
   </Pressable>
 );

@@ -3,13 +3,13 @@ import React from 'react';
 import { Text } from 'react-native';
 
 import styles from './styles';
+import { SecondaryButtonProps } from './types';
 
-interface SecondaryButtonProps {
-  text: string;
-}
-
-export const SecondaryButton = ({ text }: SecondaryButtonProps) => (
-  <Pressable>
+export const SecondaryButton: React.FunctionComponent<SecondaryButtonProps> = ({
+  text,
+  onPress,
+}) => (
+  <Pressable onPress={onPress}>
     <Text style={styles.text}>{text}</Text>
   </Pressable>
 );

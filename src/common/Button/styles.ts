@@ -6,9 +6,13 @@ const styles = StyleSheet.create({
   container: {
     borderRadius: 8,
     backgroundColor: PRIMARY,
-    margin: 16,
+    margin: 8,
     padding: 12,
-    width: '80%',
+    width: '100%',
+  },
+  lightContainer: {
+    backgroundColor: WHITE,
+    borderWidth: 1,
   },
   disabledContainer: {
     backgroundColor: GREY,
@@ -18,6 +22,9 @@ const styles = StyleSheet.create({
     color: WHITE,
     fontSize: 16,
     fontWeight: '700',
+  },
+  lightTitle: {
+    color: PRIMARY,
   },
   disabledTitle: {
     color: DARK_GREY,
