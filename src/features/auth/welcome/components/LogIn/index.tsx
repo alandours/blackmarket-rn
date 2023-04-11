@@ -10,7 +10,7 @@ import styles from 'features/auth/welcome/screen/styles';
 
 export const LogIn = () => (
   <View style={styles.mainContainer}>
-    <Image source={logo} style={styles.logo} testID="asdf" />
+    <Image source={logo} style={styles.logo} accessibilityLabel={strings.a11y.logo} />
     <TextInput
       label={strings.auth.fields.email.label}
       placeholder={strings.auth.fields.email.placeholder}

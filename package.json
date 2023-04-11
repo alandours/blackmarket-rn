@@ -118,6 +118,10 @@
     ],
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
-    }
+    },
+    "coveragePathIgnorePatterns": [
+      "__tests__",
+      "__mocks__"
+    ]
   }
 }

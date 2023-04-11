@@ -25,13 +25,10 @@ describe('SignUp', () => {
   });
 
   it('renders the Log in section', () => {
-    // expect(screen.getByLabelText('Black Market logo')).toBeTruthy();
+    expect(screen.getByLabelText('Black Market logo')).toBeTruthy();
     expect(screen.getByLabelText('Email')).toBeTruthy();
     expect(screen.getByLabelText('Password')).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Log in' })).toBeTruthy();
-
-    const x = screen.getByTestId('asdf');
-    expect(x).toBeAccessible();
   });
 
   it('renders the Sign up section', () => {
