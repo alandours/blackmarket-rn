@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { BLUE, GREY_01, GREY_02, WHITE } from 'constants/styles';
+import { BLUE, DARK_GREY, GREY, WHITE } from 'constants/styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,14 +10,14 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   disabledContainer: {
-    backgroundColor: GREY_01,
+    backgroundColor: GREY,
     borderColor: WHITE,
   },
   title: {
     color: WHITE,
   },
   disabledTitle: {
-    color: GREY_02,
+    color: DARK_GREY,
   },
 });
 
