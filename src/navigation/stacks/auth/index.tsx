@@ -11,7 +11,7 @@ import WelcomeScreen from 'features/auth/welcome/screen';
 const AuthStack = createNativeStackNavigator<AuthStackParamList>();
 
 const AuthNavigator: React.FunctionComponent = () => (
-  <AuthStack.Navigator initialRouteName={'Welcome'}>
+  <AuthStack.Navigator initialRouteName={'Welcome'} screenOptions={{ headerShown: false }}>
     <AuthStack.Screen name={'Welcome'} component={WelcomeScreen} />
     <AuthStack.Screen name={'SignIn'} component={SignInScreen} />
     <AuthStack.Screen name={'SignUp'} component={SignUpScreen} />

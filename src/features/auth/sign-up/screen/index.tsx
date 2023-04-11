@@ -1,13 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 
-import styles from './styles';
+import { AuthLayout } from 'features/auth/layout';
+
 import { SignUpPropTypes } from './types';
 
 const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = () => (
-  <View style={styles.container}>
+  <AuthLayout>
     <Text>Sign Up</Text>
-  </View>
+  </AuthLayout>
 );
 
 export default SignUpScreen;
