@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-import { AuthLayout } from 'features/auth/layout';
+import { AuthLayout } from 'features/auth/components/AuthLayout';
 
 import { SignUpPropTypes } from './types';
 
