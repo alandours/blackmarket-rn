@@ -5,21 +5,21 @@ import { NavigationContainer } from '@react-navigation/native';
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import WelcomeScreen from 'features/auth/welcome/screen';
+import { WelcomePropTypes } from 'features/auth/welcome/screen/types';
 
 const mockNavigate = jest.fn();
 
-jest.mock('@react-navigation/native', () => ({
-  ...jest.requireActual('@react-navigation/native'),
-  useNavigation: () => ({
+const mockProps = {
+  navigation: {
     navigate: mockNavigate,
-  }),
-}));
+  },
+} as unknown as WelcomePropTypes;
 
 describe('SignUp', () => {
   beforeEach(() => {
     render(
       <NavigationContainer>
-        <WelcomeScreen />
+        <WelcomeScreen {...mockProps} />
       </NavigationContainer>,
     );
   });
